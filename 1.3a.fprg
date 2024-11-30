@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1.3a"/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-06 09:10:43 PM"/>
+        <attribute name="created" value="SFA7REVTS1RPUC1DQU5OM1JROzIwMjQtMDktMjU7MDg6NDQ6MjkgUE07MjUzMg=="/>
+        <attribute name="edited" value="SFA7REVTS1RPUC1DQU5OM1JROzIwMjQtMDktMjU7MDk6NTQ6MjggQU07MjsyNjI3"/>
+        <attribute name="edited" value="QWRtaW47QURNSU4tUEM7MjAyNC0xMC0wNjswOToxMDo0MyBQTTsxOzI0MjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Sinh vi&#234;n H&#7891; &#272;&#236;nh Hu&#226;n&quot;" newline="True"/>
+            <output expression="&quot;MSSV:235752021610049&quot;" newline="True"/>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Input the adius of the circle&quot;" newline="True"/>
+            <input variable="x"/>
+            <comment text="The following will call the Circle function using the value the user ebtered.&#13;&#10;&#13;&#10;Notice that this vvariable is called 'x' while the function uses 'radius'. The value of 'x' is passed to the function."/>
+            <output expression="&quot;Area is&quot; &amp; circle(x)" newline="True"/>
+        </body>
+    </function>
+    <function name="Circle" type="Real" variable="Area">
+        <parameters>
+            <parameter name="Radius" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <comment text="This function parameter one parameter called radius. if acts like a local variable that is assigned when the function is called."/>
+            <declare name="Area" type="Real" array="False" size=""/>
+            <assign variable="Area" expression="Pi*Radius^2"/>
+            <comment text="This function returns the contents of the Area variable."/>
+        </body>
+    </function>
+</flowgorithm>
